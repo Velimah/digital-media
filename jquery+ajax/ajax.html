@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajax</title>
+</head>
+<body>
+
+<form id ="hakulomake" action="https://api.tvmaze.com/search/shows?q=">
+	<label>
+		<input type="text" name="q" placeholder="hakusana">
+	</label>
+	<button type="submit">Hae</button>
+</form>
+
+<div id="tulos">
+</div>
+
+<script src="jquery-3.6.0.js"></script>
+<script src="ajax.js"></script>
+</body>
+</html>
