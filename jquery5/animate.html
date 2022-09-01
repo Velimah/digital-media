@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Animate</title>
 	<style>
@@ -9,30 +8,28 @@
           height: 100%;
           margin: 0;
       }
-
       nav {
           position: fixed;
+					opacity: 0;
+          height: 200px;
+					width: 100vw;
       }
-
       h1 {
           text-align: center;
           margin: 0;
       }
-
       #fpage {
-          width: 100%;
+          width: 100vw;
           background-color: #CCC;
-          height: 100%;
+          height: 100vh;
       }
-
       #spage {
-          width: 100%;
+          width: 100vw;
           background-color: #CC0;
-          height: 100%;
+          height: 100vh;
       }
 	</style>
 </head>
-
 <body>
 <nav>
 	<ul>
@@ -44,13 +41,15 @@
 		</li>
 	</ul>
 </nav>
-<section id="fpage">
-	<h1>First page</h1>
-</section>
-<section id="spage">
-	<h1>Second page</h1>
-</section>
+<div id="container">
+	<section id="fpage">
+		<h1>First page</h1>
+	</section>
+	<section id="spage">
+		<h1>Second page</h1>
+	</section>
+</div>
 <script src="jquery-3.6.0.js"></script>
+<script src="animate.js"></script>
 </body>
-
 </html>

@@ -1,5 +1,6 @@
 $('#hakulomake').submit(function(evt) {
   evt.preventDefault();
+  $('#tulos').empty();
 
   const osoite = $(this).attr('action');
   const hakulause = $(this).serialize();
@@ -12,13 +13,13 @@ $('#hakulomake').submit(function(evt) {
 
       const nimi = sarja.show.name;
       const kotisivu = sarja.show.officialSite || sarja.show.url;
-      const kuva = sarja.show.image.medium;
+      const kuva = sarja.show.image?.medium || "stock.png";
       const yhteenveto = sarja.show.summary;
 
       $('#tulos').append(
           '<h2>'+nimi+'</h2>'+
           '<img src="'+kuva+'" alt="kuva">'+
-          '<p>'+yhteenveto+'</p>'+
+          yhteenveto+
           '<p><a href="'+kotisivu+'">Kotisivu</a></p>'
       );
     });
