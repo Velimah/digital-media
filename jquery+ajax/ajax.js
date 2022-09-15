@@ -17,10 +17,19 @@ $('#hakulomake').submit(function(evt) {
       const yhteenveto = sarja.show.summary;
 
       $('#tulos').append(
-          '<h2>'+nimi+'</h2>'+
+          '<div class="row my-3 border border-dark bg-light">'+
+
+          '<div class="col px-0">'+
           '<img src="'+kuva+'" alt="kuva">'+
+          '</div>'+
+
+          '<div class="col-10">'+
+          '<h2 class="py-3">'+nimi+'</h2>'+
           yhteenveto+
-          '<p><a href="'+kotisivu+'">Kotisivu</a></p>'
+          '<p><a href="'+kotisivu+'">Kotisivu</a></p>'+
+          '</div>'+
+
+          '</div>'
       );
     });
   });
