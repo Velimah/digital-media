@@ -19,15 +19,15 @@ $('#hakulomake').submit(function(evt) {
       $('#tulos').append(
           '<div class="row my-3 border border-dark bg-light">'+
 
-          '<div class="col px-0">'+
-          '<img src="'+kuva+'" alt="kuva">'+
-          '</div>'+
+            '<div class="col px-0">'+
+              '<img src="'+kuva+'" alt="kuva">'+
+            '</div>'+
 
-          '<div class="col-10">'+
-          '<h2 class="py-3">'+nimi+'</h2>'+
-          yhteenveto+
-          '<p><a href="'+kotisivu+'">Kotisivu</a></p>'+
-          '</div>'+
+            '<div class="col-10">'+
+              '<h2 class="py-3">'+nimi+'</h2>'+
+              '<p>'+yhteenveto+'</p>'+
+              '<p><a href="'+kotisivu+'">Kotisivu</a></p>'+
+            '</div>'+
 
           '</div>'
       );
