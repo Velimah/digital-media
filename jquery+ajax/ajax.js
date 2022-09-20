@@ -6,7 +6,7 @@ $('#hakulomake').submit(function(evt) {
   const hakulause = $(this).serialize();
   const url = osoite + hakulause;
 
-  $('#tulos').append('<h2>Tulokset haulle:</h2>');
+  $('#tulos').append('<h2 class="row">Tulokset haulle:</h2>');
 
   $.getJSON(url, function(sarjat){
     console.log(sarjat);
@@ -20,7 +20,7 @@ $('#hakulomake').submit(function(evt) {
       const yhteenveto = sarja.show.summary || "Ei ohjelmatietoja";
 
       $('#tulos').append(
-          '<div class="row my-3 border border-dark bg-light">'+
+          '<div class="row my-3 p-0 border border-dark bg-light">'+
 
             '<div class="col px-0">'+
               '<img src="'+kuva+'" alt="kuva">'+
