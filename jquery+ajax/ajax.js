@@ -14,7 +14,7 @@ $('#hakulomake').submit(function(evt) {
       const nimi = sarja.show.name;
       const kotisivu = sarja.show.officialSite || sarja.show.url;
       const kuva = sarja.show.image?.medium || "stock.png";
-      const yhteenveto = sarja.show.summary;
+      const yhteenveto = sarja.show.summary || "Ei ohjelmatietoja";
 
       $('#tulos').append(
           '<div class="row my-3 border border-dark bg-light">'+
