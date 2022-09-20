@@ -6,8 +6,11 @@ $('#hakulomake').submit(function(evt) {
   const hakulause = $(this).serialize();
   const url = osoite + hakulause;
 
+  $('#tulos').append('<h2>Tulokset haulle:</h2>');
+
   $.getJSON(url, function(sarjat){
     console.log(sarjat);
+
     $.each(sarjat, function(i, sarja) {
       console.log(sarja.show.name);
 
