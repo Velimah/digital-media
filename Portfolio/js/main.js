@@ -8,16 +8,16 @@ function mouseEnter() {
     width: '352px',
     height: '198px',
     borderColor: 'black',
-  }, 200 );
+  }, 200);
 
-  $('.title',this).stop().animate({
+  $('.title', this).stop().animate({
     opacity: '1',
     fontSize: '2rem',
-  }, 300 );
+  }, 300);
 
   $('.card-img', this).stop().animate({
     opacity: '0.2'
-  }, 200 );
+  }, 200);
 
 }
 
@@ -28,16 +28,16 @@ function mouseLeave() {
   $(this).stop().animate({
     width: "320px",
     height: "180px",
-  }, 200 );
+  }, 200);
 
-  $('.title',this).stop().animate({
+  $('.title', this).stop().animate({
     fontSize: '1rem',
     opacity: '0'
-  }, 300 );
+  }, 300);
 
   $('.card-img', this).stop().animate({
     opacity: '1'
-  }, 200 );
+  }, 200);
 
 }
 
@@ -60,7 +60,7 @@ function mouseEnter2() {
   $(this).stop().animate({
     fontSize: '1.2rem',
     borderWidth: '5px',
-  }, 300 );
+  }, 300);
 
 }
 
@@ -73,7 +73,7 @@ function mouseLeave2() {
   $(this).stop().animate({
     fontSize: '1.1rem',
     borderWidth: '1px',
-  }, 300 );
+  }, 300);
 
 }
 
