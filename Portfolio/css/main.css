@@ -41,6 +41,8 @@
 
 .modal-title {
     background-color: #E38093FF;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .modal-header {
@@ -118,4 +120,10 @@ footer {
 .card {
     box-shadow: 1px 1px 3px #000000;
     border: none;
+}
+
+.modal-link {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
