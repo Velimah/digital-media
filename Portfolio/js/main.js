@@ -13,10 +13,10 @@ function mouseEnter() {
   $('.title', this).stop().animate({
     opacity: '1',
     fontSize: '2rem',
-  }, 300);
+  }, 400);
 
   $('.card-img', this).stop().animate({
-    opacity: '0.2'
+    opacity: '0.15'
   }, 200);
 
 }
@@ -33,7 +33,7 @@ function mouseLeave() {
   $('.title', this).stop().animate({
     fontSize: '1rem',
     opacity: '0'
-  }, 300);
+  }, 400);
 
   $('.card-img', this).stop().animate({
     opacity: '1'
