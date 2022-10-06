@@ -1,0 +1,35 @@
+// Your variable overrides
+$body-bg: #000;
+$body-color: #ffffff;
+$border-radius: 1.5rem;
+$btn-border-radius: 0;
+
+$spacer: 1.5rem;
+
+$theme-colors: (
+"primary": #ff9285,
+        "success": white
+);
+$font-size-base: 1.5rem;
+
+$display-font-sizes: (
+        1: 6rem,
+        2: 4.5rem,
+        3: 4rem,
+        4: 3.5rem,
+        5: 3rem,
+        6: 2.5rem
+);
+
+$p-display-font-family: sans, sans-serif;
+$display-h1-font-family: "Fira Sans", sans-serif;
+$display-font-weight: bold;
+
+$input-btn-padding-y: 20px;
+$input-btn-padding-x: 40px;
+
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// $component-state-property-size
