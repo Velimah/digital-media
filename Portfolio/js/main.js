@@ -10,7 +10,7 @@ function mouseEnter() {
     borderColor: 'black',
   }, 200);
 
-  $('.title', this).stop().animate({
+  $('.card-title', this).stop().animate({
     opacity: '1',
     fontSize: '2rem',
   }, 400);
@@ -30,7 +30,7 @@ function mouseLeave() {
     height: "180px",
   }, 200);
 
-  $('.title', this).stop().animate({
+  $('.card-title', this).stop().animate({
     fontSize: '1rem',
     opacity: '0'
   }, 400);
