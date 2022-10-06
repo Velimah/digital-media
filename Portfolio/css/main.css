@@ -21,6 +21,7 @@
 .container {
     background-color: #e7d2d8;
     box-shadow: 0 0 5px #e7d2d8;
+    max-width: 1200px;
 }
 
 .navbar {
@@ -132,4 +133,8 @@ footer {
 }
 .modal-link:hover {
     text-shadow: 0 0 1px #3030fc;
+}
+html {
+    margin-left: 10%;
+    margin-right: 10%;
 }
