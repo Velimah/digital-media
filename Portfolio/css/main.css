@@ -166,7 +166,8 @@ footer {
 
 @media (max-width: 991px) {
     .navbar-collapse {
-        padding-left: 20px;
+        padding-left: 10px;
+        padding-bottom: 10px;
     }
 
     body {
