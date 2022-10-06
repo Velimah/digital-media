@@ -55,15 +55,13 @@ $('.nav-link').mouseenter(mouseEnter2);
 
 function mouseEnter2() {
 
-  $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'double'});
+  $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'solid'});
 
   $(this).stop().animate({
-    fontSize: '1.2rem',
-    borderWidth: '5px',
-  }, 300);
+    borderWidth: '3px',
+  }, 200);
 
 }
-
 $('.nav-link').mouseleave(mouseLeave2);
 
 function mouseLeave2() {
@@ -71,9 +69,8 @@ function mouseLeave2() {
   $(this).css({textShadow: 'none', borderBottomStyle: 'none'});
 
   $(this).stop().animate({
-    fontSize: '1.1rem',
     borderWidth: '1px',
-  }, 300);
+  }, 100);
 
 }
 
