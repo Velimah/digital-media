@@ -128,12 +128,15 @@ body {
 
 .modal-link {
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+.modal-link a {
     text-decoration: none;
 }
 
 .modal-link:hover {
     text-shadow: 0 0 1px #3030fc;
+    text-decoration: underline;
 }
 
 footer {
@@ -149,8 +152,14 @@ footer {
     height: 60px;
 }
 
+.footer-link a {
+    color: black;
+    font-size: 1.2rem;
+}
+
 .footer-link:hover {
-    text-shadow: 0 0 1px #0000ff;
+    text-shadow: 0 0 1px #000000;
+    text-decoration: underline;
 }
 
 @media (max-width: 991px) {
