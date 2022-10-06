@@ -6,6 +6,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 @font-face {
@@ -19,7 +20,7 @@
 
 .container {
     background-color: #e7d2d8;
-    box-shadow: 0 0 10px #e7d2d8;
+    box-shadow: 0 0 5px #e7d2d8;
 }
 
 .navbar {
@@ -28,11 +29,11 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 10px #e38093;
+    box-shadow: 0 0 5px #e38093;
 }
 
 .modal-body {
-    background-color: #E7D2D8FF;
+    background-color: #e7d2d8;
     text-align: left;
     border-radius: 0 0 10px 10px;
     box-shadow: 1px 1px 3px #000000;
@@ -53,7 +54,7 @@
 }
 
 .close {
-    background-color: #E7D2D8FF;
+    background-color: #e7d2d8;
     border-radius: 4px;
     border-width: 2px;
     box-shadow: 0 0 4px #000000;
@@ -66,15 +67,16 @@ body {
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .nav-link {
     font-size: 1.1rem;
-    font-weight: bold;
     height: 40px;
     border-width: 0;
+    color: black;
+    font-weight: normal;
 }
 
 .navbar-nav {
@@ -84,16 +86,18 @@ body {
 
 #carouselText {
     width: 160px;
-    font-weight: bold;
     padding: 10px;
     z-index: 19;
     border-radius: 0 0 10px 0;
     background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .heading {
+    font-size: 2.3rem;
     width: fit-content;
     font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 #web {
@@ -102,16 +106,16 @@ body {
 
 #media {
     padding-top: 100px;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
 }
 
 .carouselText {
-    text-shadow: 0 0 5px #000000;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 footer {
     background-color: #e38093;
-    box-shadow: 0 0 10px #e38093;
+    box-shadow: 0 0 5px #e38093;
     height: 60px;
     z-index: 1000;
     bottom: 0;
@@ -125,5 +129,7 @@ footer {
 .modal-link {
     padding: 10px;
     font-size: 1.5rem;
-    font-weight: bold;
+}
+.modal-link:hover {
+    text-shadow: 0 0 1px #3030fc;
 }

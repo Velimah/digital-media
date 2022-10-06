@@ -55,7 +55,7 @@ $('.nav-link').mouseenter(mouseEnter2);
 
 function mouseEnter2() {
 
-  $(this).css({textShadow: '1px 1px 1px #e38093', borderBottomStyle: 'double'});
+  $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'double'});
 
   $(this).stop().animate({
     fontSize: '1.2rem',
