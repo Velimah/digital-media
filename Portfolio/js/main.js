@@ -81,7 +81,7 @@ function mouseLeaveModalButton() {
 
 }
 
-// change margin on top if vertical navigation menu is open
+// change padding on top if vertical navigation menu is open
 let x=0
 $('.navbar-toggler').click(clickNavBarButton);
 function clickNavBarButton() {
