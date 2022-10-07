@@ -6,17 +6,17 @@ function mouseEnterCard() {
   $(this).stop().animate({
     width: '352px',
     height: '198px',
-    borderColor: 'black',
+    borderColor: 'black'
   }, 200);
 
   $('.card-title', this).stop().animate({
     opacity: '1',
-    fontSize: '2rem',
+    fontSize: '2rem'
   }, 400);
 
   $('.card-img', this).stop().animate({
     opacity: '0.15'
-  }, 200);
+  }, 300);
 
 }
 
@@ -26,7 +26,7 @@ function mouseLeaveCard() {
 
   $(this).stop().animate({
     width: "320px",
-    height: "180px",
+    height: "180px"
   }, 200);
 
   $('.card-title', this).stop().animate({
@@ -36,7 +36,7 @@ function mouseLeaveCard() {
 
   $('.card-img', this).stop().animate({
     opacity: '1'
-  }, 200);
+  }, 300);
 
 }
 
@@ -48,8 +48,8 @@ function mouseEnterNavLink() {
   $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'solid'});
 
   $(this).stop().animate({
-    borderWidth: '3px',
-  }, 200);
+    borderWidth: '3px'
+  }, 150);
 
 }
 
@@ -60,7 +60,7 @@ function mouseLeaveNavLink() {
   $(this).css({textShadow: 'none', borderBottomStyle: 'none'});
 
   $(this).stop().animate({
-    borderWidth: '1px',
+    borderWidth: '1px'
   }, 100);
 
 }
