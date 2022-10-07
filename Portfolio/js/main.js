@@ -52,6 +52,7 @@ function mouseEnterNavLink() {
   }, 200);
 
 }
+
 $('.nav-link').mouseleave(mouseLeaveNavLink);
 
 function mouseLeaveNavLink() {
@@ -82,10 +83,11 @@ function mouseLeaveModalButton() {
 }
 
 // change padding on top if vertical navigation menu is open
-let x=0
+let x = 0
 $('.navbar-toggler').click(clickNavBarButton);
+
 function clickNavBarButton() {
-  if(x===0) {
+  if (x === 0) {
     $('body').stop().animate({
       paddingTop: '216px'
     }, 300);

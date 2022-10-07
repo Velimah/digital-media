@@ -133,6 +133,7 @@ body {
     padding: 10px;
     font-size: 1.3rem;
 }
+
 .modal-link a {
     text-decoration: none;
 }
@@ -140,6 +141,15 @@ body {
 .modal-link:hover {
     text-shadow: 0 0 1px #3030fc;
     text-decoration: underline;
+}
+
+.modal-video {
+    width: 932px;
+}
+
+iframe {
+    width:900px;
+    height:506px;
 }
 
 footer {
