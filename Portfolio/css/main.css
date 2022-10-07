@@ -8,7 +8,7 @@
 }
 
 body {
-    margin-top: 60px;
+    padding-top: 60px;
     background-color: #e5e0e2;
 }
 
@@ -29,7 +29,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 1px 1px 1px #e38093;
+    box-shadow: 0 0 5px #e38093;
 }
 
 .navbar-collapse {
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 1px #000000;
 }
 
@@ -61,6 +61,7 @@ body {
     border-width: 0;
 }
 
+
 .carousel-text {
     text-shadow: 1px 1px 1px #000000;
     font-size: 1.7rem;
@@ -74,12 +75,11 @@ body {
 }
 
 #web-section {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 
 #media-section {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding-top: 150px;
 }
 
 .card {
@@ -143,6 +143,7 @@ body {
 }
 
 footer {
+    margin-top: 150px;
     background-color: #e38093;
     box-shadow: 0 0 5px #e38093;
     height: 60px;
@@ -171,7 +172,4 @@ footer {
         padding-bottom: 10px;
     }
 
-    body {
-        margin-top: 209px;
-    }
 }

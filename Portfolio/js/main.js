@@ -1,8 +1,7 @@
 //card hover functions
+$('.card').mouseenter(mouseEnterCard);
 
-$('.card').mouseenter(mouseEnter);
-
-function mouseEnter() {
+function mouseEnterCard() {
 
   $(this).stop().animate({
     width: '352px',
@@ -21,9 +20,9 @@ function mouseEnter() {
 
 }
 
-$('.card').mouseleave(mouseLeave);
+$('.card').mouseleave(mouseLeaveCard);
 
-function mouseLeave() {
+function mouseLeaveCard() {
 
   $(this).stop().animate({
     width: "320px",
@@ -41,19 +40,10 @@ function mouseLeave() {
 
 }
 
-// card click function
-
-$('.card').click(clickIcon);
-
-function clickIcon() {
-  $(this).stop().css({opacity: '1'})
-}
-
 //navbar hover fucntions
+$('.nav-link').mouseenter(mouseEnterNavLink);
 
-$('.nav-link').mouseenter(mouseEnter2);
-
-function mouseEnter2() {
+function mouseEnterNavLink() {
 
   $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'solid'});
 
@@ -62,9 +52,9 @@ function mouseEnter2() {
   }, 200);
 
 }
-$('.nav-link').mouseleave(mouseLeave2);
+$('.nav-link').mouseleave(mouseLeaveNavLink);
 
-function mouseLeave2() {
+function mouseLeaveNavLink() {
 
   $(this).css({textShadow: 'none', borderBottomStyle: 'none'});
 
@@ -75,21 +65,44 @@ function mouseLeave2() {
 }
 
 // modal button hover functions
+$('.close').mouseenter(mouseEnterModalButton);
 
-$('.close').mouseenter(mouseEnter3);
-
-function mouseEnter3() {
+function mouseEnterModalButton() {
 
   $(this).css({backgroundColor: '#E05B75FF'});
 
 }
 
-$('.close').mouseleave(mouseLeave3);
+$('.close').mouseleave(mouseLeaveModalButton);
 
-function mouseLeave3() {
+function mouseLeaveModalButton() {
 
   $(this).css({backgroundColor: '#E7D2D8FF'});
 
 }
 
+// change margin on top if vertical navigation menu is open
+let x=0
+$('.navbar-toggler').click(clickNavBarButton);
+function clickNavBarButton() {
+  if(x===0) {
+    $('body').stop().animate({
+      paddingTop: '216px'
+    }, 300);
+    x++;
+  } else {
+    $('body').stop().animate({
+      paddingTop: '60px'
+    }, 300);
+    x--;
+  }
+}
 
+/*
+// card click function
+$('.card').click(clickCard);
+
+function clickCard() {
+  $(this).stop().css({opacity: '1'})
+}
+ */
