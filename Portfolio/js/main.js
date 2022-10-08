@@ -1,4 +1,4 @@
-//card hover functions
+// card hover animation functions
 $('.card').mouseenter(mouseEnterCard);
 
 function mouseEnterCard() {
@@ -20,6 +20,7 @@ function mouseEnterCard() {
 
 }
 
+
 $('.card').mouseleave(mouseLeaveCard);
 
 function mouseLeaveCard() {
@@ -40,7 +41,17 @@ function mouseLeaveCard() {
 
 }
 
-//navbar hover fucntions
+// modal opening animation
+$('.card').click(function (){
+  $('.modal-content', this).css({opacity: '0', top: '-200px'})
+  $('.modal-content', this).stop().animate({
+    opacity: '1',
+    top: '0'
+  }, 400);
+
+})
+
+// navbar hover animation fucntions.
 $('.nav-link').mouseenter(mouseEnterNavLink);
 
 function mouseEnterNavLink() {
@@ -65,7 +76,7 @@ function mouseLeaveNavLink() {
 
 }
 
-// modal button hover functions
+// modal button hover animation functions
 $('.close').mouseenter(mouseEnterModalButton);
 
 function mouseEnterModalButton() {
@@ -101,10 +112,29 @@ function clickNavBarButton() {
 }
 
 /*
-// card click function
-$('.card').click(clickCard);
+// showing/hiding elements on scrolling.
+$(document).scroll(function () {
 
-function clickCard() {
-  $(this).stop().css({opacity: '1'})
-}
+  let y = $(this).scrollTop();
+
+  if (y < 300) {
+    $('#web-section').stop().fadeTo(200, 0)
+
+  }
+  else {
+    $('#web-section').stop().fadeTo(200, 1)
+
+  }
+
+  if (y < 1100) {
+    $('#media-section').stop().fadeTo(200, 0)
+
+  }
+  else {
+    $('#media-section').stop().fadeTo(200, 1)
+
+  }
+
+});
+
  */
