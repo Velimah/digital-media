@@ -125,10 +125,13 @@ function clickNavBarButton() {
   }
 }
 
-// changes navbar color on scrolling. For some reason doesn't work on firefox.
-$(document).scroll(function () {
+// changes navbar color on scrolling. For some reason doesn't work on firefox?
+// y2 = position of bottom of the current view. When bottom of the view reaches end of the document, colour changes back to red.
+$(document).scroll(function() {
 
-  let y = $(this).scrollTop();
+  let y = $(window).scrollTop();
+  let y2 = $(window).scrollTop() + $(window).height();
+  let y3 = $(document).height();
 
   if ( y < 100) {
     $('.navbar').css({
@@ -137,7 +140,8 @@ $(document).scroll(function () {
     })
   }
 
-  else if (y < 1200) {
+  else if (y2 < y3) {
+
     $('.navbar').css({
       backgroundColor: "#fafafa",
       boxShadow: "0 0 5px #fafafa"
