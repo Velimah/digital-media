@@ -9,12 +9,12 @@
 
 body {
     padding-top: 60px;
-    background-color: #e5e0e2;
+    background-color: #e7dfe0;
 }
 
 .container {
-    background-color: #e7d2d8;
-    box-shadow: 0 0 5px #e7d2d8;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px #fafafa;
     max-width: 1100px;
     width: 100%;
 }
@@ -157,7 +157,7 @@ iframe {
 }
 
 footer {
-    margin-top: 300px;
+    margin-top: 200px;
     background-color: #e38093;
     box-shadow: 0 0 5px #e38093;
     height: 60px;

@@ -1,4 +1,4 @@
-// card hover animation functions
+// card hover animation
 $('.card').mouseenter(mouseEnterCard);
 
 function mouseEnterCard() {
@@ -51,7 +51,7 @@ $('.card').click(function (){
 
 })
 
-// navbar hover animation fucntions.
+// navbar hover animation
 $('.nav-link').mouseenter(mouseEnterNavLink);
 
 function mouseEnterNavLink() {
@@ -76,7 +76,7 @@ function mouseLeaveNavLink() {
 
 }
 
-// modal button hover animation functions
+// modal button hover animation
 $('.close').mouseenter(mouseEnterModalButton);
 
 function mouseEnterModalButton() {
@@ -111,30 +111,32 @@ function clickNavBarButton() {
   }
 }
 
-/*
-// showing/hiding elements on scrolling.
+// changes navbar color on scrolling.
 $(document).scroll(function () {
 
   let y = $(this).scrollTop();
 
-  if (y < 300) {
-    $('#web-section').stop().fadeTo(200, 0)
-
+  if ( y < 100) {
+    console.log(y)
+    $('.navbar').css({
+      backgroundColor: "#e38093",
+      boxShadow: "0 0 5px #e38093"
+    })
   }
+
+  else if (y < 1200) {
+    $('.navbar').css({
+      backgroundColor: "#fafafa",
+      boxShadow: "0 0 5px #fafafa"
+    })
+  }
+
   else {
-    $('#web-section').stop().fadeTo(200, 1)
-
-  }
-
-  if (y < 1100) {
-    $('#media-section').stop().fadeTo(200, 0)
-
-  }
-  else {
-    $('#media-section').stop().fadeTo(200, 1)
-
+    console.log(y)
+    $('.navbar').css({
+      backgroundColor: "#e38093",
+      boxShadow: "0 0 5px #e38093"
+    })
   }
 
 });
-
- */
