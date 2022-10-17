@@ -147,10 +147,15 @@ body {
     width: 932px;
 }
 
-iframe {
+.modal-content {
+    opacity: 0;
+    top: -200px;
+}
+/* iframe {
     width:900px;
     height:506px;
 }
+*/
 #donald {
     width:720px;
     height:720px;

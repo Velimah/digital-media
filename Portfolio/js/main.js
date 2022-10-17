@@ -41,9 +41,23 @@ function mouseLeaveCard() {
 
 }
 
-// modal opening animation
+// modal opening animation. Clicks go for some reason through child elements, making animation start again when clicking popup content.
+// Console shows click target always as .card class.
+/*
 $('.card').click(function (){
-  $('.modal-content', this).css({opacity: '0', top: '-200px'})
+    console.log(this)
+    $('.modal-content', this).css({opacity: '0', top: '-200px'})
+    $('.modal-content', this).stop().animate({
+      opacity: '1',
+      top: '0'
+    }, 400);
+
+})
+*/
+
+// modal opening animation. Workaround that works only once as the code above is not working.
+$('.card').click(function (){
+
   $('.modal-content', this).stop().animate({
     opacity: '1',
     top: '0'
@@ -111,13 +125,12 @@ function clickNavBarButton() {
   }
 }
 
-// changes navbar color on scrolling.
+// changes navbar color on scrolling. For some reason doesn't work on firefox.
 $(document).scroll(function () {
 
   let y = $(this).scrollTop();
 
   if ( y < 100) {
-    console.log(y)
     $('.navbar').css({
       backgroundColor: "#e38093",
       boxShadow: "0 0 5px #e38093"
@@ -132,7 +145,6 @@ $(document).scroll(function () {
   }
 
   else {
-    console.log(y)
     $('.navbar').css({
       backgroundColor: "#e38093",
       boxShadow: "0 0 5px #e38093"
