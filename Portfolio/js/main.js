@@ -1,7 +1,5 @@
 // card hover animation
-$('.card').mouseenter(mouseEnterCard);
-
-function mouseEnterCard() {
+$('.card').mouseenter(function(){
 
   $(this).stop().animate({
     width: '352px',
@@ -18,12 +16,9 @@ function mouseEnterCard() {
     opacity: '0.15'
   }, 300);
 
-}
+});
 
-
-$('.card').mouseleave(mouseLeaveCard);
-
-function mouseLeaveCard() {
+$('.card').mouseleave(function(){
 
   $(this).stop().animate({
     width: "320px",
@@ -39,7 +34,7 @@ function mouseLeaveCard() {
     opacity: '1'
   }, 300);
 
-}
+});
 
 // modal opening animation. Clicks go for some reason through child elements, making animation start again when clicking popup content.
 // Console shows click target always as .card class.
@@ -52,10 +47,10 @@ $('.card').click(function (){
       top: '0'
     }, 400);
 
-})
+});
 */
 
-// modal opening animation. Workaround that works only once as the code above is not working.
+// modal opening animation. Work around that works only once as the code above is not working properly.
 $('.card').click(function () {
 
   $('.modal-content', this).stop().animate({
@@ -63,12 +58,10 @@ $('.card').click(function () {
     top: '0'
   }, 400);
 
-})
+});
 
 // navbar hover animation
-$('.nav-link').mouseenter(mouseEnterNavLink);
-
-function mouseEnterNavLink() {
+$('.nav-link').mouseenter(function(){
 
   $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'solid'});
 
@@ -76,11 +69,9 @@ function mouseEnterNavLink() {
     borderWidth: '3px'
   }, 150);
 
-}
+});
 
-$('.nav-link').mouseleave(mouseLeaveNavLink);
-
-function mouseLeaveNavLink() {
+$('.nav-link').mouseleave(function(){
 
   $(this).css({textShadow: 'none', borderBottomStyle: 'none'});
 
@@ -88,30 +79,24 @@ function mouseLeaveNavLink() {
     borderWidth: '1px'
   }, 100);
 
-}
+});
 
 // modal button hover animation
-$('.close').mouseenter(mouseEnterModalButton);
-
-function mouseEnterModalButton() {
+$('.close').mouseenter(function(){
 
   $(this).css({backgroundColor: '#E05B75FF'});
 
-}
+});
 
-$('.close').mouseleave(mouseLeaveModalButton);
-
-function mouseLeaveModalButton() {
+$('.close').mouseleave(function(){
 
   $(this).css({backgroundColor: '#E7D2D8FF'});
 
-}
+});
 
 // change padding on top if vertical navigation menu is open
 let x = 0
-$('.navbar-toggler').click(clickNavBarButton);
-
-function clickNavBarButton() {
+$('.navbar-toggler').click(function(){
 
   if (x === 0) {
     $('body').stop().animate({
@@ -126,33 +111,33 @@ function clickNavBarButton() {
     x--;
   }
 
-}
+});
 
 // changes navbar color on scrolling. For some reason doesn't work on firefox?
 // y2 = position of bottom of the current view. When bottom of the view reaches end of the document, colour changes back to red.
 $(document).scroll(function () {
 
   let y = $(window).scrollTop();
-  let y2 = $(window).scrollTop() + $(window).height();
+  let y2 = y + $(window).height();
   let y3 = $(document).height();
 
   if (y < 100) {
     $('.navbar').css({
       backgroundColor: "#e38093",
       boxShadow: "0 0 5px #e38093"
-    })
+    });
 
   } else if (y2 < y3) {
     $('.navbar').css({
       backgroundColor: "#fafafa",
       boxShadow: "0 0 5px #fafafa"
-    })
+    });
 
   } else {
     $('.navbar').css({
       backgroundColor: "#e38093",
       boxShadow: "0 0 5px #e38093"
-    })
+    });
 
   }
 
