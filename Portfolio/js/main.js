@@ -124,19 +124,19 @@ $(document).scroll(function () {
   if (y < 100) {
     $('.navbar').css({
       backgroundColor: "#e38093",
-      boxShadow: "0 0 5px #e38093"
+      boxShadow: "0px 5px 10px -10px #e38093"
     });
 
   } else if (y2 < y3) {
     $('.navbar').css({
       backgroundColor: "#fafafa",
-      boxShadow: "0 0 5px #fafafa"
+      boxShadow: "0px 5px 10px -10px #000000"
     });
 
   } else {
     $('.navbar').css({
       backgroundColor: "#e38093",
-      boxShadow: "0 0 5px #e38093"
+      boxShadow: "0px 5px 10px -10px #e38093"
     });
 
   }

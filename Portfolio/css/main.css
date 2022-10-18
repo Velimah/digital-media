@@ -157,7 +157,7 @@ video {
 footer {
     margin-top: 200px;
     background-color: #e38093;
-    box-shadow: 0 0 5px #e38093;
+    box-shadow: 0 -5px 10px -10px #e38093;
     height: 60px;
     z-index: 1000;
     bottom: 0;
