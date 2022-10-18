@@ -56,7 +56,7 @@ $('.card').click(function (){
 */
 
 // modal opening animation. Workaround that works only once as the code above is not working.
-$('.card').click(function (){
+$('.card').click(function () {
 
   $('.modal-content', this).stop().animate({
     opacity: '1',
@@ -112,47 +112,48 @@ let x = 0
 $('.navbar-toggler').click(clickNavBarButton);
 
 function clickNavBarButton() {
+
   if (x === 0) {
     $('body').stop().animate({
       paddingTop: '216px'
     }, 300);
     x++;
+
   } else {
     $('body').stop().animate({
       paddingTop: '60px'
     }, 300);
     x--;
   }
+
 }
 
 // changes navbar color on scrolling. For some reason doesn't work on firefox?
 // y2 = position of bottom of the current view. When bottom of the view reaches end of the document, colour changes back to red.
-$(document).scroll(function() {
+$(document).scroll(function () {
 
   let y = $(window).scrollTop();
   let y2 = $(window).scrollTop() + $(window).height();
   let y3 = $(document).height();
 
-  if ( y < 100) {
+  if (y < 100) {
     $('.navbar').css({
       backgroundColor: "#e38093",
       boxShadow: "0 0 5px #e38093"
     })
-  }
 
-  else if (y2 < y3) {
-
+  } else if (y2 < y3) {
     $('.navbar').css({
       backgroundColor: "#fafafa",
       boxShadow: "0 0 5px #fafafa"
     })
-  }
 
-  else {
+  } else {
     $('.navbar').css({
       backgroundColor: "#e38093",
       boxShadow: "0 0 5px #e38093"
     })
+
   }
 
 });
