@@ -36,6 +36,10 @@ h2 {
     box-shadow: 0 0 5px #e38093;
 }
 
+.navbar-toggler {
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
 .navbar-collapse {
     padding-left: 70px;
 }
@@ -188,4 +192,14 @@ footer {
         padding-bottom: 10px;
     }
 
+}
+
+@media (max-width: 720px) {
+    .card-title {
+        opacity: 1;
+        font-size: 1.8rem;
+    }
+    .card-img {
+        opacity: 0.15;
+    }
 }
