@@ -12,9 +12,13 @@ body {
     background-color: #e7dfe0;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
 .container {
     background-color: #fafafa;
-    box-shadow: 0 0 5px #fafafa;
+    box-shadow: 0 0 10px -5px #000000;
     max-width: 1100px;
     width: 100%;
 }
@@ -82,7 +86,7 @@ body {
 }
 
 .card {
-    box-shadow: 1px 1px 3px #000000;
+    box-shadow: 2px 2px 5px #000000;
     border: none;
 }
 
@@ -114,7 +118,7 @@ body {
 }
 
 video {
-    max-width: 950px;
+    max-width: 930px;
     width: 100%;
     max-height: 900px;
     height: 100%;

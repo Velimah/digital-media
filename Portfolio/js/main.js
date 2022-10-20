@@ -37,7 +37,7 @@ $('.card').mouseleave(function(){
 });
 
 // modal opening animation. Clicks go for some reason through child elements, making animation start again when clicking popup content.
-// Console shows click target always as .card class.
+// Console.log shows click target always as .card class.
 /*
 $('.card').click(function (){
     console.log(this)
@@ -67,7 +67,7 @@ $('.nav-link').mouseenter(function(){
 
   $(this).stop().animate({
     borderWidth: '3px'
-  }, 150);
+  }, 200);
 
 });
 
@@ -113,8 +113,8 @@ $('.navbar-toggler').click(function(){
 
 });
 
-// changes navbar color on scrolling. For some reason doesn't work on firefox?
-// y2 = position of bottom of the current view. When bottom of the view reaches end of the document, colour changes back to red.
+// changes navbar color on scrolling. y2 = position of bottom of the current view.
+// When bottom of the view reaches end of the document, colour changes back to red.
 $(document).scroll(function () {
 
   let y = $(window).scrollTop();
