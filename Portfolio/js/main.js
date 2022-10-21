@@ -1,5 +1,5 @@
 // card hover animation
-$('.card').mouseenter(function(){
+$('.card').mouseenter(function () {
 
   $(this).stop().animate({
     width: '352px',
@@ -18,7 +18,7 @@ $('.card').mouseenter(function(){
 
 });
 
-$('.card').mouseleave(function(){
+$('.card').mouseleave(function () {
 
   $(this).stop().animate({
     width: "320px",
@@ -61,7 +61,7 @@ $('.card').click(function () {
 });
 
 // navbar hover animation
-$('.nav-link').mouseenter(function(){
+$('.nav-link').mouseenter(function () {
 
   $(this).css({textShadow: '1px 1px 1px #000000', borderBottomStyle: 'solid'});
 
@@ -71,7 +71,7 @@ $('.nav-link').mouseenter(function(){
 
 });
 
-$('.nav-link').mouseleave(function(){
+$('.nav-link').mouseleave(function () {
 
   $(this).css({textShadow: 'none', borderBottomStyle: 'none'});
 
@@ -82,13 +82,13 @@ $('.nav-link').mouseleave(function(){
 });
 
 // modal button hover animation
-$('.close').mouseenter(function(){
+$('.close').mouseenter(function () {
 
   $(this).css({backgroundColor: '#E05B75FF'});
 
 });
 
-$('.close').mouseleave(function(){
+$('.close').mouseleave(function () {
 
   $(this).css({backgroundColor: '#E7D2D8FF'});
 
@@ -96,7 +96,7 @@ $('.close').mouseleave(function(){
 
 // change padding on top if vertical navigation menu is open
 let x = 0
-$('.navbar-toggler').click(function(){
+$('.navbar-toggler').click(function () {
 
   if (x === 0) {
     $('body').stop().animate({
